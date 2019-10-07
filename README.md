@@ -52,3 +52,7 @@ To exit virtualenv:
 
     exit
 
+
+To change project name use following command:
+
+    python manage.py rename new_project_name
