@@ -15,13 +15,38 @@ or for production only:
     pipenv install
 
 
+To run django commands from outside of virtualenv (development environment as default):
+[django extensions is installed in development environment only]
+
+    pipenv run python manage.py runserver_plus
+
 To get into virtualenv:
 
     pipenv shell
 
-To run django commands from outside of virtualenv:
 
-    pipenv run python manage.py runserver
+To run server in production environment from inside of virtualenv:
+[django extensions command runserver_plus is not available in production environment]
+
+    DJANGO_ENV=production python manage.py runserver
+
+or:
+    
+    export DJANGO_ENV=production
+    python manage.py runserver
+    
+
+To run test environment from inside of virtualenv:
+[django extensions command runserver_plus is not available in test environment]
+[special django test settings are available, like installed test related app: dummy_app]
+
+    DJANGO_ENV=test ptw 
+
+or:
+    
+    export DJANGO_ENV=test
+    pytest -v
+    
 
 To exit virtualenv:
 
