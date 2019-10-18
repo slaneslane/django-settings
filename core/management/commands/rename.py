@@ -15,12 +15,12 @@ class Command(BaseCommand):
         # a bit of logic to rename the project:
         files_to_rename = [
                 'manage.py',
-                'split/settings/components/base.py',
-                'split/wsgi.py',
+                'demo/settings/components/base.py',
+                'demo/wsgi.py',
                 'pytest.ini',
             ]
 
-        folder_to_rename = 'split'
+        folder_to_rename = 'demo'
 
         for f in files_to_rename:
             with open(f, 'r') as file:
