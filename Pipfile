@@ -12,8 +12,11 @@ pytest-django = "*"
 pytest-watch = "*"
 
 [packages]
-django = "==2.2.4"
+django = "*"
 django-split-settings = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
