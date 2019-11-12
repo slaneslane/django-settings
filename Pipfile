@@ -10,6 +10,8 @@ werkzeug = "*"
 pytest = "*"
 pytest-django = "*"
 pytest-watch = "*"
+ipython = "*"
+ipdb = "*"
 
 [packages]
 django = "*"
